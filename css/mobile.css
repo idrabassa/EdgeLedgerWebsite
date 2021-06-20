@@ -1,0 +1,87 @@
+#what .items {
+  display: block;
+  padding: 1rem;
+}
+/* Aling items */
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+/* Position icon */
+#what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+/* Smarphone 280less pixels width*/
+
+/* Showcase */
+@media (max-width: 280px) {
+  #showcase .showcase-content .l-heading {
+    font-size: 2rem;
+  }
+}
+/* SmartPhone */
+@media (max-width: 533px) {
+  #navbar #navbar-menu {
+    display: none;
+  }
+
+  #navbar .navicon {
+    display: block;
+    align-items: center;
+  }
+  #navbar .navicon i {
+    color: black;
+  }
+  #navbar .navicon i:hover {
+    color: white;
+  }
+}
+
+@media (max-width: 533px) {
+  /* NavBar */
+  #navbar.responsive {
+    display: block;
+  }
+
+  #navbar.responsive #navbar-menu {
+    display: block;
+  }
+  #navbar.responsive .navbar-down #navbar-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar.responsive .navbar-down #navbar-menu li {
+    display: flex;
+    width: 100%;
+  }
+  #navbar.responsive .navbar-down #navbar-menu li a {
+    text-align: right;
+    width: 100%;
+  }
+  #navbar.responsive ul li:not(:last-child) {
+    border-bottom: rgba(17, 17, 17, 0.267) dotted 1px;
+  }
+  /* Section:who */
+  #who{
+      display: block;
+  }
+  #who.who-img{
+      display: none;
+  }
+  /* Section:who-our clients */
+  #clients .items div:last-child{
+      display: none;
+  }
+  /* Section:Contact Us */
+  #contact{
+      flex-direction: column;
+  }
+  #contact .map{
+   height: 200px; 
+   border-top: 4px solid #333333; 
+  }
+
+}
